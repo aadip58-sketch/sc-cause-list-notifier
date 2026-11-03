@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">SC Cause List Notifier</string>
+    <string name="monitoring_active">Active • Checking in background</string>
+    <string name="monitoring_paused">Background checks paused</string>
+    <string name="last_checked">Last checked: Just now</string>
+    <string name="refresh">Check Now</string>
+    <string name="enable_notifications">Enable Notifications</string>
+    <string name="court_all">All Courts</string>
+    <string name="channel_name">Cause List Updates</string>
+    <string name="channel_description">Notifications when new Supreme Court cause lists are published</string>
+</resources>
