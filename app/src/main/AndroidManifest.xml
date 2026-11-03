@@ -9,6 +9,8 @@
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
 
     <application
         android:allowBackup="true"
@@ -32,7 +34,14 @@
             </intent-filter>
         </activity>
 
-        <!-- Receiver to restart periodic checking on phone reboot -->
+        <!-- Foreground Service for continuous 2-minute checks -->
+        <service
+            android:name=".service.CauseListForegroundService"
+            android:enabled="true"
+            android:exported="false"
+            android:foregroundServiceType="dataSync" />
+
+        <!-- Receiver to restart monitoring on phone reboot -->
         <receiver
             android:name=".service.BootReceiver"
             android:enabled="true"

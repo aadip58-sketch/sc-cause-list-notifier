@@ -18,6 +18,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import in.gov.sci.causelist.databinding.ActivityMainBinding
 import in.gov.sci.causelist.parser.CauseListParser
 import in.gov.sci.causelist.service.BootReceiver
+import in.gov.sci.causelist.service.CauseListForegroundService
 import in.gov.sci.causelist.ui.CauseListAdapter
 import in.gov.sci.causelist.util.NotificationHelper
 import in.gov.sci.causelist.util.PreferencesManager
@@ -55,8 +56,10 @@ class MainActivity : AppCompatActivity() {
         // Setup notification channel
         NotificationHelper.createNotificationChannel(this)
 
-        // Ensure background periodic worker is active
-        BootReceiver.schedulePeriodicWork(this)
+        // Start 2-minute real-time foreground monitoring service
+        CauseListForegroundService.startService(this)
+
+        binding.tvMonitoringStatus.text = "Background Monitor Active (Every 2 mins)"
 
         setupRecyclerView()
         setupListeners()
