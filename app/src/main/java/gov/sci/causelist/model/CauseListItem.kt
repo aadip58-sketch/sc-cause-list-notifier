@@ -1,4 +1,4 @@
-package in.gov.sci.causelist.model
+package gov.sci.causelist.model
 
 data class CauseListItem(
     val id: String,

@@ -63,7 +63,7 @@ sc-cause-list-notifier/
 ├── app/
 │   ├── src/main/
 │   │   ├── AndroidManifest.xml  # Permissions (Internet, Notifications, Boot)
-│   │   ├── java/in/gov/sci/causelist/
+│   │   ├── java/gov/sci/causelist/
 │   │   │   ├── MainActivity.kt            # Main screen & pull-to-refresh
 │   │   │   ├── model/CauseListItem.kt     # Data model
 │   │   │   ├── parser/CauseListParser.kt  # Scrapes sci.gov.in & detects new lists

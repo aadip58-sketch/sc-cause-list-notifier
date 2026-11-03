@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "in.gov.sci.causelist"
+    namespace = "gov.sci.causelist"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "in.gov.sci.causelist"
+        applicationId = "gov.sci.causelist"
         minSdk = 26
         targetSdk = 34
         versionCode = 1

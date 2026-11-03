@@ -1,6 +1,6 @@
-package in.gov.sci.causelist.parser
+package gov.sci.causelist.parser
 
-import in.gov.sci.causelist.model.CauseListItem
+import gov.sci.causelist.model.CauseListItem
 import okhttp3.OkHttpClient
 import okhttp3.Request
 import org.jsoup.Jsoup

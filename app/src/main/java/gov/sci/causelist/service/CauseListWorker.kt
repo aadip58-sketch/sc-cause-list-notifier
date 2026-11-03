@@ -1,11 +1,11 @@
-package in.gov.sci.causelist.service
+package gov.sci.causelist.service
 
 import android.content.Context
 import androidx.work.CoroutineWorker
 import androidx.work.WorkerParameters
-import in.gov.sci.causelist.parser.CauseListParser
-import in.gov.sci.causelist.util.NotificationHelper
-import in.gov.sci.causelist.util.PreferencesManager
+import gov.sci.causelist.parser.CauseListParser
+import gov.sci.causelist.util.NotificationHelper
+import gov.sci.causelist.util.PreferencesManager
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 

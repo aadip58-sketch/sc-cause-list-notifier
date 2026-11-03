@@ -1,4 +1,4 @@
-package in.gov.sci.causelist.ui
+package gov.sci.causelist.ui
 
 import android.content.Context
 import android.content.Intent
@@ -8,8 +8,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
-import in.gov.sci.causelist.databinding.ItemCauseListBinding
-import in.gov.sci.causelist.model.CauseListItem
+import gov.sci.causelist.databinding.ItemCauseListBinding
+import gov.sci.causelist.model.CauseListItem
 
 class CauseListAdapter(
     private val context: Context

@@ -1,4 +1,4 @@
-package in.gov.sci.causelist
+package gov.sci.causelist
 
 import android.Manifest
 import android.content.Intent
@@ -15,13 +15,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.lifecycle.lifecycleScope
 import androidx.recyclerview.widget.LinearLayoutManager
-import in.gov.sci.causelist.databinding.ActivityMainBinding
-import in.gov.sci.causelist.parser.CauseListParser
-import in.gov.sci.causelist.service.BootReceiver
-import in.gov.sci.causelist.service.CauseListForegroundService
-import in.gov.sci.causelist.ui.CauseListAdapter
-import in.gov.sci.causelist.util.NotificationHelper
-import in.gov.sci.causelist.util.PreferencesManager
+import gov.sci.causelist.databinding.ActivityMainBinding
+import gov.sci.causelist.parser.CauseListParser
+import gov.sci.causelist.service.BootReceiver
+import gov.sci.causelist.service.CauseListForegroundService
+import gov.sci.causelist.ui.CauseListAdapter
+import gov.sci.causelist.util.NotificationHelper
+import gov.sci.causelist.util.PreferencesManager
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

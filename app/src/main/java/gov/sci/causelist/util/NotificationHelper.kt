@@ -1,4 +1,4 @@
-package in.gov.sci.causelist.util
+package gov.sci.causelist.util
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
@@ -8,9 +8,9 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Build
 import androidx.core.app.NotificationCompat
-import in.gov.sci.causelist.MainActivity
-import in.gov.sci.causelist.R
-import in.gov.sci.causelist.model.CauseListItem
+import gov.sci.causelist.MainActivity
+import gov.sci.causelist.R
+import gov.sci.causelist.model.CauseListItem
 
 object NotificationHelper {
 

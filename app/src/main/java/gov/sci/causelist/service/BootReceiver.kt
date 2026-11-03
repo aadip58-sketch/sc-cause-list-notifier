@@ -1,4 +1,4 @@
-package in.gov.sci.causelist.service
+package gov.sci.causelist.service
 
 import android.content.BroadcastReceiver
 import android.content.Context

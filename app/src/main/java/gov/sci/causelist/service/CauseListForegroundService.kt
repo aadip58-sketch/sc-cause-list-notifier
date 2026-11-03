@@ -1,4 +1,4 @@
-package in.gov.sci.causelist.service
+package gov.sci.causelist.service
 
 import android.app.Notification
 import android.app.NotificationChannel
@@ -10,11 +10,11 @@ import android.content.Intent
 import android.os.Build
 import android.os.IBinder
 import androidx.core.app.NotificationCompat
-import in.gov.sci.causelist.MainActivity
-import in.gov.sci.causelist.R
-import in.gov.sci.causelist.parser.CauseListParser
-import in.gov.sci.causelist.util.NotificationHelper
-import in.gov.sci.causelist.util.PreferencesManager
+import gov.sci.causelist.MainActivity
+import gov.sci.causelist.R
+import gov.sci.causelist.parser.CauseListParser
+import gov.sci.causelist.util.NotificationHelper
+import gov.sci.causelist.util.PreferencesManager
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job

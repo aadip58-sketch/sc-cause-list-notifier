@@ -1,4 +1,4 @@
-package in.gov.sci.causelist.util
+package gov.sci.causelist.util
 
 import android.content.Context
 import android.content.SharedPreferences
